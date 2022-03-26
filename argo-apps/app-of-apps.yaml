@@ -8,9 +8,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/filipjosifoski/argo-test.git  # Can point to either a Helm chart repo or a git repo.
+    repoURL: https://gnithub.com/filipjosifoski/argo-test.git  # Can point to either a Helm chart repo or a git repo.
     targetRevision: HEAD
     path: argo-apps 
   destination:
     namespace: argocd
     name: in-cluster
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
