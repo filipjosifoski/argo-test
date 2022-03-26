@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-cd-deployment
+  name: argo-workflows-deployment
   namespace: argocd
   labels:
-    name: argo-cd-deployment
+    name: argo-workflows-deployment
 spec:
   project: default
   source:
