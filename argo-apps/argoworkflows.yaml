@@ -12,7 +12,7 @@ spec:
     targetRevision: HEAD
     path: argoworkflows/deployment
   destination:
-    namespace: argocd
+    namespace: argo-workflows
     name: in-cluster
   syncPolicy:
     automated:
