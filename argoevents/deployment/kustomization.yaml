@@ -3,5 +3,5 @@ kind: Kustomization
 
 namespace: argocd
 resources:
-  - kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-events/stable/manifests/install.yaml
-  - kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-events/stable/manifests/install-validating-webhook.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-events/stable/manifests/install.yaml
+  - https://raw.githubusercontent.com/argoproj/argo-events/stable/manifests/install-validating-webhook.yaml
