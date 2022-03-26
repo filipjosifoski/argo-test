@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-apps-deployment
+  namespace: argocd
+  labels:
+    name: argo-apps-deployment
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/filipjosifoski/argo-test.git  # Can point to either a Helm chart repo or a git repo.
+    targetRevision: HEAD
+    path: argocd/deployment
+  destination:
+    namespace: argocd
+    name: in-cluster
