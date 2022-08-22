@@ -15,7 +15,10 @@ spec:
     namespace: argo-events
     name: in-cluster
   syncPolicy:
+    createNamespace: true
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
 

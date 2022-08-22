@@ -15,6 +15,7 @@ spec:
     namespace: argo-workflows
     name: in-cluster
   syncPolicy:
+   createNamespace: true
     automated:
       prune: true
       selfHeal: true
