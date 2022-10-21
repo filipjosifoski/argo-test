@@ -1,0 +1,7 @@
+name: TEST
+runs:
+  using: composite
+  steps: 
+  - name: Run shell command
+    shell: bash
+    run: HELLO $USER $PASSWORD
