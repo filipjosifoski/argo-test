@@ -3,9 +3,6 @@ description: TEST STEP
 runs:
   using: composite
   steps: 
-  - name: Checkout
-    uses: actions/checkout@v3.1.0
-
   - name: Run shell command
     shell: bash
     run: HELLO $USER $PASSWORD
