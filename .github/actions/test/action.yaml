@@ -5,4 +5,4 @@ runs:
   steps: 
   - name: Run shell command
     shell: bash
-    run: HELLO $USER $PASSWORD
+    run: echo HELLO $USER $PASSWORD
