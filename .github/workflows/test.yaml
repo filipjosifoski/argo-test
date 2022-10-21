@@ -12,4 +12,4 @@ jobs:
       USER: FILIP
     steps:
     - name: Test-step
-      uses: ./github/actions/action.yaml
+      uses: ./.github/actions/action.yaml
